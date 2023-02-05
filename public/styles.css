@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+  font-family: 'Arvo', serif;
+  margin: 0;
+  background-color: #FEEED5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #C19A6C;
+}
+
+header > * {
+  flex: 1 0 0 ;
+  margin: 10px;
+}
+
+.header-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.header-content img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+main, footer{ 
+  margin: 10px;
+}
+
+#main-navigation ul {
+  font-size: 1.25em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5%;
+  margin-right: 10%;
+}
+
+
+/* home */
+.main-image {
+  max-width: 40%;
+}
+
+#main-navigation li {
+  list-style: none;
+}
+
+/* Products */
+
+#product-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.product {
+  flex: 1 0 0;
+  margin: 0;
+}
+
+.product > * {
+  width: 100%;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h2 {
+  color: brown;
+  font-size: 1.25em;
+}
+
+/* Nutrition */
+
+#nutritionList {
+  color: brown;
+}

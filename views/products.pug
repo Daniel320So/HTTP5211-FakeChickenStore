@@ -1,0 +1,16 @@
+extends layout 
+
+
+block main-content 
+  //You can overwrite the main-content block by writing block content
+  //in the template file which is extending.
+  h1.page-title Products
+  p We provide multiple flavours on chicken Breast, browse our products and bring them home!
+  #product-list
+    each prod in products 
+      div(class="product") 
+        img(src=prod.imgUrl, alt=`Image of ${prod.name}`)
+        // Imgae downloaded from https://www.polloup.com/
+        h2 #{prod.name}
+        p #{prod.description}
+        p Price: #{prod.price} CAD

@@ -1,0 +1,23 @@
+block variables 
+doctype html 
+html 
+  head
+    meta(charset="utf-8")
+    title #{title} | Chicken Beast
+    block scripts 
+      link(rel="stylesheet", type="text/css", href="/styles.css")
+  body
+    header#header 
+      .header-content   
+        img(src="./images/hen.png", alt="Chicken Icon")
+        h2#site-name 
+          a(href="./#") Chicken Beast
+      nav#main-navigation 
+        ul 
+          each link in menu 
+            li 
+              a(href=link.path) #{link.name}
+    main#main 
+      block main-content 
+    footer#footer 
+      p &copy; Copyright HoKit So, 2023.
